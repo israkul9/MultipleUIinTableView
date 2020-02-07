@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     var kData : [Khulna] = []
     var rData : [Rajshahi] = []
     
+    var pi : [UIImage] = [#imageLiteral(resourceName: "a2"), #imageLiteral(resourceName: "a1")]
+    
     @IBOutlet weak var viewT: UITableView!
     @IBOutlet weak var seg: UISegmentedControl!
     override func viewDidLoad() {
@@ -91,6 +93,37 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
             cell.raj = rData[indexPath.row]
         }
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailed = self.storyboard?.instantiateViewController(withIdentifier: "det") as! DetailViewController
+        if seg.selectedSegmentIndex == 0{
+            detailed.str1 = dData[indexPath.row].playerName
+            detailed.str2 = dData[indexPath.row].playerAge
+            detailed.str3 = dData[indexPath.row].playerFomration
+            detailed.pic = pi[0]
+        }
+        
+        if seg.selectedSegmentIndex == 1{
+            detailed.str1 = cData[indexPath.row].playerName
+            detailed.str2 = cData[indexPath.row].playerAge
+            detailed.str3 = cData[indexPath.row].playerFomration
+              detailed.pic = pi[1]
+        }
+        
+        if seg.selectedSegmentIndex == 2{
+            detailed.str1 = kData[indexPath.row].playerName
+            detailed.str2 = kData[indexPath.row].playerAge
+            detailed.str3 = kData[indexPath.row].playerFomration
+              detailed.pic = pi[0]
+        }
+        
+        if seg.selectedSegmentIndex == 3{
+            detailed.str1 = rData[indexPath.row].playerName
+            detailed.str2 = rData[indexPath.row].playerAge
+            detailed.str3 = rData[indexPath.row].playerFomration
+              detailed.pic = pi[1]
+        }
+        self.navigationController?.pushViewController(detailed, animated: true)
     }
     
     

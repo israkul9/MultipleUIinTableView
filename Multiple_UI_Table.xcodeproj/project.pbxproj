@@ -15,6 +15,7 @@
 		FA5E133323ED08C7005B1AE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5E133123ED08C7005B1AE6 /* LaunchScreen.storyboard */; };
 		FA5E133B23ED0A0A005B1AE6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E133A23ED0A09005B1AE6 /* Model.swift */; };
 		FA5E133D23ED0C6E005B1AE6 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E133C23ED0C6E005B1AE6 /* DataTableViewCell.swift */; };
+		FA5E133F23ED1EEA005B1AE6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E133E23ED1EEA005B1AE6 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FA5E133423ED08C7005B1AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA5E133A23ED0A09005B1AE6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FA5E133C23ED0C6E005B1AE6 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		FA5E133E23ED1EEA005B1AE6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				FA5E133423ED08C7005B1AE6 /* Info.plist */,
 				FA5E133A23ED0A09005B1AE6 /* Model.swift */,
 				FA5E133C23ED0C6E005B1AE6 /* DataTableViewCell.swift */,
+				FA5E133E23ED1EEA005B1AE6 /* DetailViewController.swift */,
 			);
 			path = Multiple_UI_Table;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				FA5E132B23ED08C5005B1AE6 /* ViewController.swift in Sources */,
 				FA5E132723ED08C5005B1AE6 /* AppDelegate.swift in Sources */,
 				FA5E133D23ED0C6E005B1AE6 /* DataTableViewCell.swift in Sources */,
+				FA5E133F23ED1EEA005B1AE6 /* DetailViewController.swift in Sources */,
 				FA5E132923ED08C5005B1AE6 /* SceneDelegate.swift in Sources */,
 				FA5E133B23ED0A0A005B1AE6 /* Model.swift in Sources */,
 			);
